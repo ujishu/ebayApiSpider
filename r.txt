@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<title>I.UA - твоя почта&nbsp;</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<meta name="google-site-verification" content="HShIi9AqQMLaZPv7XOyqYVcwWYfPY-kJbUWtVTQkXkQ" />
+
+<link rel="icon" href="//i3.i.ua/css/i2/favicon_16.ico" type="image/x-icon">
+<link rel="shortcut icon" href="//i3.i.ua/css/i2/favicon_16.ico" type="image/x-icon">
+<![if !IE]><link rel="stylesheet" type="text/css" media="all" href="//i3.i.ua/css/i2/blue/sprite/homepage.y398ec87f.css" /><![endif]>
+<!--[if gte IE 8]><link rel="stylesheet" type="text/css" media="all" href="//i3.i.ua/css/i2/blue/sprite/homepage_ie.y398ec87f.css" /><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="all" href="//i3.i.ua/css/i2/blue/sprite/homepage_ie7.y398ec87f.css" /><![endif]-->
+<script type="text/javascript">
+<!--
+window.JS_ERROR_NOTIFY = 'MA==';
+var lmJsVersion = 1.690;
+var lmJsPath = '//i3.i.ua/js/';
+var JS_LANG_ID = 0;
+var I_VER2 = true;
+//-->
+</script>
+<script type="text/javascript" src="//i3.i.ua/js/util.ya033ba43.js"></script>
+<script type="text/javascript" src="//i3.i.ua/js/JSHttpRequest.y989b751f.js"></script>
+<script type="text/javascript" src="//i3.i.ua/js/i/global.yd0422d7b.js"></script>
+<script type="text/javascript" src="//i3.i.ua/js/i/autoload.y33464a91.js"></script>
+<script type="text/javascript" src="//i3.i.ua/js/i/main2.yc7e6a353.js"></script>
+<meta name="description" content="I.UA - популярный украинский портал" />
+<link rel="search" href="http://i3.i.ua/opensearch.xml" title="I.UA" type="application/opensearchdescription+xml" />
+<script type="text/javascript">
+<!--
+//var I_VER3 = 1;
+
+if (screen.width < 1280) {
+	utilSetCookie('tight', 1, new Date(2020, 0, 1, 0, 0, 0), '/');
+	window.location.href = '/?norefresh';
+}
+//-->
+</script>
+<style type="text/css" media="screen">
+.Branding_header {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingheader_blue_day.jpg) repeat-x -50px 100%;}
+.Branding_header .branding_left {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingheader_left_blue_day.png) no-repeat 100% 100%;}
+.Branding_header .logo_container {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingheader_logocontainer_blue_day.png) no-repeat 0 100%;}
+.Branding_header .Header {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingheader_header_blue_day.png) no-repeat 100% 100%;}
+.Branding_header .branding_right {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingheader_right_blue_day.png) 8px 100% no-repeat;}
+.Branding_body {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingbody_blue_day.jpg) repeat-x -24px 0; padding-top: 8px; margin-top: -8px;}
+.Branding_body .branding_left {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingbody_left_blue_day.png) no-repeat 100% 16px;}
+.Branding_body .branding_right {background: url(//i3.i.ua/v2/homepage/skin/fall/brandingbody_right_blue_day.png) no-repeat 8px 16px;}
+</style>
+</head>
+<body><span></span>
+<div id="bmcounter">
+<!-- I.UA GIF 1x1 --><script type="text/javascript" language="javascript"><!--
+action=0;
+iS='//r.i.ua/s?u1&p0&n'+Math.random();
+bmD=iD=document;iD.cookie="iua=1";if(iD.cookie)iS+='&c1';
+bmQ='//c.bigmir.net/?s134156&t6&n'+Math.random();
+if(bmD.cookie)bmQ+='&c1';
+try{
+iHP=document.body.firstChild;
+iHP.style.behavior="url('#default#homePage')";
+if (iHP.addBehavior) {
+	iHP.addBehavior('#default#homePage');
+	if (iHP.isHomePage(window.location.href)) {iS+='&o1';bmQ+='&h1';}
+}
+}catch(e){}
+try{
+iS+='&d'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)
++"&w"+screen.width+'&h'+screen.height;
+}catch(e){}
+iT=iR=iD.referrer.replace(/^.*\/\//, '');iH=window.location.href.replace(/^.*\/\//, '');
+((iI=iT.indexOf('/'))!=-1)?(iT=iT.substring(0,iI)):(iI=iT.length);
+if(iT!=iH.substring(0,iI))iS+='&f'+escape(iR);
+try{
+bmS=screen;bmQ+='&d'+(bmS.colorDepth?bmS.colorDepth:bmS.pixelDepth)+"&r"+bmS.width;
+}catch(e){}
+try{
+bmF = iR;
+((bmI=bmF.indexOf('/'))!=-1)?(bmF=bmF.substring(0,bmI)):(bmI=bmF.length);
+if(bmF!=window.location.href.substring(7,7+bmI))bmQ+='&f'+escape(bmD.referrer);
+}catch(e){}
+var iImg = new Image();
+iImg.src = iS;
+UtilLite.addEvent(window, 'load', function () {
+	var bmImg = new Image();
+	bmImg.src = bmQ;
+});
+function ILoadScript(src){var t='script',gt=iD.createElement(t),s=iD.getElementsByTagName(t)[0];gt.setAttribute('async','async');gt.src=src; s.parentNode.insertBefore(gt,s);}
+
+var pp_gemius_identifier = new String('d2CQokrqd35FcrGT2i4QO6cT.M5ghpgjcgQCz2AdCDH.u7');
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit');gemius_pending('gemius_event');gemius_pending('pp_gemius_hit');gemius_pending('pp_gemius_event');
+ILoadScript('//kpmediagaua.hit.gemius.pl/xgemius.js');
+
+
+/*var tns_already, tnscm_adn = tnscm_adn || [];
+(function(c,m){if(c.indexOf&&c.indexOf(m)<0){c.unshift(m);}}(tnscm_adn,"inline_cm"));
+if (!tns_already) {
+	tns_already=1;
+
+	UtilLite.addEvent(window, 'load', function () {
+		var i=new Image();
+		i.src="http://juke.mmi.bemobile.ua/bug/pic.gif?siteid=i.ua&j=1&nocache="+Math.random();
+		ILoadScript("http://source.mmi.bemobile.ua/cm/cm.js");
+	});
+}*/
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34374057-1']);
+_gaq.push(['_setDomainName', '.i.ua']);
+_gaq.push(['_addOrganic', 'go.mail.ru', 'q']);
+_gaq.push(['_addOrganic', 'nigma.ru', 's']);
+_gaq.push(['_addOrganic', 'search.qip.ru', 'query']);
+_gaq.push(['_addOrganic', 'aport.ru', 'r']);
+_gaq.push(['_addOrganic', 'webalta.ru', 'q']);
+_gaq.push(['_addOrganic', 'search.livetool.ru', 'text']);
+_gaq.push(['_addOrganic', 'poisk.ngs.ru', 'q']);
+_gaq.push(['_addOrganic', 'search.tyt.by', 'query']);
+_gaq.push(['_addOrganic', 'search.ukr.net', 'search_query']);
+_gaq.push(['_addOrganic', 'liveinternet.ru', 'q']);
+_gaq.push(['_addOrganic', 'meta.ua', 'q']);
+_gaq.push(['_addOrganic', 'gogo.ru', 'q']);
+_gaq.push(['_trackPageview']);
+UtilLite.addEvent(window, 'load', function () {
+	ILoadScript('//stats.g.doubleclick.net/dc.js');
+});
+//-->
+</script>
+<noscript>
+<img src="//juke.mmi.bemobile.ua/bug/pic.gif?siteid=i.ua" alt="" width="1" height="1" border="0" />
+</noscript>
+</div>
+<div class="Branding_header  page_medium clear">
+	<div class="branding_left"></div>
+	<div class="branding_right"></div>
+	<div class="Header clear">
+	<ul class="user_menu">
+		<li class="marginal"><a href="/settings.php" onclick="return i_showFloat(1, '//www.i.ua/settings.php?resolution=' + screen.width);" title="настройка внешнего вида титульной страницы">Настройка страницы</a></li>
+<li class="first"><a onclick="return i_showFloat(1);" href="//passport.i.ua/login/">Вход</a></li>
+<li class="right"><a href="//passport.i.ua/registration/?_url=http%3A%2F%2Fwww.i.ua%2F">Регистрация</a></li>
+		<li class="last"></li>
+	</ul>
+	<ul class="user_sections">
+	<li class="first"><a href="http://www.i.ua/" title="Добавить в Избранное" rel="sidebar" onClick="if(b.chrome){window.location.href='http://www.i.ua/bookmark/';return false}if(b.ie){window.external.AddFavorite(this.href,document.title);return false}else if(b.moz||b.ns6||b.opera){this.title = document.title;return true;}else return false;" id="i_setHome" class="favorites_16"><i></i>Мне нравится этот сайт</a></li>
+	<li><a href="http://www.i.ua/start/" title="Сделать стартовой" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.i.ua/');return false;" id="i_favorites" class="homepage_16"><i></i>Я очень люблю этот сайт</a></li>
+	<li><a href="http://pda.i.ua/" title="Мобильная версия почты" id="i_wap" class="pda_16"><i></i>PDA</a></li>
+<script>if(action)document.getElementById('i_favorites').title=action</script>
+	<li class="last"></li>
+	</ul>	<span class="lang" id="langs"><i class="lang0 on" title="русский"></i><a href="http://i.ua/lang.php?id=2&_rand=1509628692" class="lang1" title="українська"></a></span>	<div class="clear logo_container">
+		<div class="Right">
+			<!--advertising --><!--728x90 --><div id="banner730" class="baner"></div>			<!--/advertising -->
+		<!--/Right -->
+		</div>
+		<div class="xmass"></div>
+	</div>
+
+	<!--/Header -->
+	</div><!--/Branding_header -->
+</div>
+
+<div class="Branding_body  page_medium">
+	<div class="branding_left"></div>
+	<div class="branding_right"></div>
+	<div class="Body clear">
+		<div class="round_ie"><i></i><i></i></div>
+
+		<!--правая колонка с премиум-банером -->
+		<div class="Right">
+<div class="block_gamma_gradient weather"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://weather.i.ua/Kiev/" title="перейти к погоде на всю неделю">Киев</a></h2><a class="clear" href="http://weather.i.ua/"><span title="сейчас Киев дождь +9&deg;">сейчас <i style="background-image:url(//i3.i.ua/v2/weather/ico_rain_24.png);"></i><b class="warm"> +9&deg;</b></span><span title="вечеромКиев пасмурно +9&deg;">вечером <i style="background-image:url(//i3.i.ua/v2/weather/ico_cloudy_24.png);"></i><b class="warm"> +9&deg;</b></span></a><div class="more clear"><a href="http://weather.i.ua/Kiev/">Погода на неделю</a></div>
+</div>
+</div>			<!-- banner -->
+<div class="baner" id="Premium"><script type="text/javascript" src="//i.mediatraffic.com.ua/js/uho/mt20.js"></script>
+<div id="300_teaser" class="mt_adv f300x250 rows3" style="border-color:transparent;background-color:transparent;border-radius:4px"></div>
+<script type="text/javascript">new MTr('300_teaser', {site:1,format:1,number:3});</script></div><div class="block_gamma_gradient"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://goroskop.i.ua/scorpio/" title="перейти к гороскопам других знаков">Скорпион</a></h2>
+<span class="scorpio float_left" title="Гороскоп для скорпион"><i></i></span>Не забывайте о людях, которые вам небезразличны, дабы они не забыли о вас. Помните, что хорошее слово и  &#133;<div class="more clear"><a href="http://goroskop.i.ua/scorpio/">Гороскоп на завтра</a></div>
+</div>
+</div><div class="block_gamma_gradient valuta"><div class="tl"></div><div class="br"></div><div class="content clear">
+<h2><a href="http://finance.i.ua/" title="перейти к курсам валют НБУ и украинских банков">Курс валют</a></h2><style>
+.valuta ._subtitle {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 1em;
+}
+.valuta ._subtitle a {
+	color: #000;
+	border-color: #000;
+}
+</style>
+<h2 class="_subtitle"><a href="http://finance.i.ua/market/">наличный рынок</a></h2>
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th>покупка</th>
+			<th>продажа</th>
+			<th>НБУ</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>USD</th>
+			<td><i class="increase"></i>26.7630</td>
+    <td><i class="increase"></i>26.9757</td>
+    <td><i class="increase"></i>26.878403</td>
+  </tr>
+		<tr>
+			<th>EUR</th>
+			<td><i class="increase"></i>31.0465</td>
+    <td><i class="increase"></i>31.5223</td>
+    <td><i class="decrease"></i>31.211202</td>
+  </tr>
+		<tr>
+			<th>RUB</th>
+			<td><i class="increase"></i>0.3983</td>
+    <td><i class="increase"></i>0.4674</td>
+    <td>0.462180</td>
+  </tr>
+	</tbody>
+</table>
+<small>
+	<h3><a href="http://finance.i.ua/converter/">Конвертер валют</a></h3>
+	<form>
+		<ul class="list_cols_2 clear">
+			<li>
+				<input value="Введите сумму" type="text" maxlength="9" class="input summi" id="fn_s1900" onkeydown="return I_Main.fn_converterIsAllowedSymbols(event)" onkeyup="I_Main.fn_calculate(1900);" onblur="I_Main.fn_cssjs('remove',this);" onfocus="I_Main.fn_cssjs('add',this);"/>
+			</li>
+			<li>
+<select name="fn_c1900" id="fn_c1900" class="input" onchange="I_Main.fn_cross(this, 1900)"><option value="1" selected="selected">ГРН</option><option value="840">USD</option><option value="978">EUR</option><option value="643">RUB</option></select>			</li>
+		</ul>
+		<ul class="list_underlined clear" style="display:none;">			<li  style="display:none;">
+<b id="fn_o1900_1">0.00</b>				<input type="text" id="fn_i1900_1" onkeydown="return I_Main.fn_converterIsAllowedSymbols(event)" onkeyup="I_Main.fn_calculate(1900);" value="1" onblur="I_Main.fn_cssjs('add',this);" onfocus="I_Main.fn_cssjs('remove',this);" /> ГРН			</li>
+			<li >
+<b id="fn_o1900_840">0.00</b>				<input type="text" id="fn_i1900_840" onkeydown="return I_Main.fn_converterIsAllowedSymbols(event)" onkeyup="I_Main.fn_calculate(1900);" value="26.9757" onblur="I_Main.fn_cssjs('add',this);" onfocus="I_Main.fn_cssjs('remove',this);" /> USD			</li>
+			<li >
+<b id="fn_o1900_978">0.00</b>				<input type="text" id="fn_i1900_978" onkeydown="return I_Main.fn_converterIsAllowedSymbols(event)" onkeyup="I_Main.fn_calculate(1900);" value="31.5223" onblur="I_Main.fn_cssjs('add',this);" onfocus="I_Main.fn_cssjs('remove',this);" /> EUR			</li>
+			<li >
+<b id="fn_o1900_643">0.00</b>				<input type="text" id="fn_i1900_643" onkeydown="return I_Main.fn_converterIsAllowedSymbols(event)" onkeyup="I_Main.fn_calculate(1900);" value="0.4674" onblur="I_Main.fn_cssjs('add',this);" onfocus="I_Main.fn_cssjs('remove',this);" /> RUB			</li>
+		</ul>
+	</form>
+</small>
+<script language="JavaScript" type="text/javascript"><!--
+var fn_cs = {'1':'ГРН','840':'USD','978':'EUR','643':'RUB'};
+var fn_rs = {'978':['31.0465','31.5223','+0.0700','+0.0709'],'643':['0.3983','0.4674','+0.0006','+0.0009'],'840':['26.7630','26.9757','+0.0417','+0.0400'],'t':1509626846};
+//-->
+</script>
+</div></div><div class="block_gamma_gradient mail_login translate"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://perevod.i.ua/" title="перейти к переводу с расширенными возможностями">Переводчик</a></h2><form method="post" action="https://perevod.i.ua/">
+<input type="hidden" name="_subm" value="perevod" />
+<input type="hidden" name="subject" value="**" />
+	<!--<p class="error"><span>Сообщение об ошибке</span></p> -->
+	<ul class="list_cols_2 clear">
+		<li><textarea name="srctext" rows="5" onkeyup="inputLimit(this, 1000);" onchange="inputLimit(this, 1000);"></textarea></li>
+		<li>
+			<p class="clear">
+				<select name="from"><option value="Rus" selected="selected">рус</option><option value="Eng">анг</option><option value="Ukr">укр</option><option value="Fre">фра</option><option value="Ger">нем</option><option value="Lat">лат</option></select>				<select name="into"><option value="Ukr" selected="selected">укр</option><option value="Rus">рус</option><option value="Eng">анг</option><option value="Fre">фра</option><option value="Ger">нем</option><option value="Lat">лат</option></select>				<i title="поменять направление перевода" onclick="I_Main.perevod(this)"></i>
+			</p>
+			<input type="submit" value="Перевести" />
+		</li>
+	</ul>
+</form></div>
+</div><div class="block_gamma_gradient"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://tv.i.ua/" title="перейти к программе на всю неделю">Сейчас на ТВ</a></h2><ul class="list_simple list_time">
+	<li><span class="time">15:15</span><a rel="nofollow" href="http://tv.i.ua/ut-1/52167/">Надвечір’я. Долі</a> <span class="description">Первый Национальный</span></li><li><span class="time">15:00</span><a rel="nofollow" href="http://tv.i.ua/1plus1/67187/">Величне століття. Роксолана</a> <span class="description">1+1</span></li><li><span class="time">14:50</span><a rel="nofollow" href="http://tv.i.ua/inter/120944/">Вещдок</a> <span class="description">Интер</span></li><li><span class="time">11:40</span>"МастерШеф", 6 сезон, 14 еп <span class="description">СТБ</span></li><li><span class="time">15:10</span>Т/с "Майор і магія" <span class="description">ICTV</span></li><li><span class="time">12:20</span>Т/с "Відчайдушні домогосподарки", 2 сезон <span class="description">Новый канал</span></li><li><span class="time">15:00</span>Сьогодні <span class="description">Телеканал Украина</span></li></ul>
+<div class="more"><a href="http://tv.i.ua/">Вся телепрограмма</a></div>
+</div>
+</div><div class="block_gamma_gradient photo"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://love.i.ua/" title="перейти в раздел &laquo;Знакомства&raquo;">Знакомства</a></h2><dl class="preview_left clear">
+	<dt><a class="preview" href="http://love.i.ua/user/8014615/"><img src="//os1.i.ua/3/8/14823800_1555b98_59f87883.jpg" style="width:51px;height:76px;" alt="Антония" /></a></dt>
+	<dd>
+		<p><a href="http://love.i.ua/user/8014615/" class="girl"><i></i>Антония</a></p>
+		34 года, телец, познакомится с парнем в возрасте 30-45 лет	</dd>
+</dl></div>
+</div><div class="block_gamma_gradient informer_ua" style="display:none"></div><div class="block_gamma_gradient block_gamma_gradient news_premium_item"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://foodandmood.com.ua/" target="_blank">Food &amp; Mood</a></h2><a href="http://foodandmood.com.ua/uamade/1592672-Sirov-jalen--m-jasn--del-katesi-za-starodavn-mi-recepturami-SVO-M" target="_blank">
+	<span class="_img"><img class="thumbnail" src="//bm.img.com.ua/nxs133/food/orig/c/d0/7f4518fd3ec3818850dd53471e451d0c.jpg"></span>
+	<span class="_title">Сиров’ялені м’ясні делікатеси за стародавніми рецептурами СВОЇМ</span>
+</a>
+</div></div>		<!--/Right -->
+		</div>
+		<div class="Left">
+			<div class="logo_container">
+				<div class="Left">
+					<a href="/" title="I.UA"><img src="//i3.i.ua/logo_new1.png" alt="I.UA" /></a>
+				</div>
+				<div class="Search">
+					<div class="block_gamma_dark header_search"><div class="tl"></div><div class="content clear">
+					<form name="sform" action="//search.i.ua" method="GET" >
+						<span class="field"><input id="searchQ" type="text" name="q" style="color: rgb(119, 119, 119);"
+value="Поиск в разделах" onfocus="I_Main.searchInput.onfocus(this,'Поиск в разделах')"
+onblur="I_Main.searchInput.onblur(this,'Поиск в разделах')" /></span><input type="submit" value="Найти" />
+						<ul class="partner_links">
+							<li class="partner_links_item"><a href="http://foodandmood.com.ua/" target="_blank" class="i_foodandmood">Food &amp; Mood</a></li>
+							<li class="partner_links_item"><a href="http://gloss.ua/" target="_blank" class="i_gloss">Gloss</a></li>
+							<li class="partner_links_item"><a href="http://tochka.net/" target="_blank" class="i_tochka">Tochka.net</a></li>
+							<li class="partner_links_item"><a href="http://mport.ua/" target="_blank" class="i_mport">MPort</a></li>
+							<li class="partner_links_item"><a href="http://dengi.ua/" target="_blank" class="i_dengi">Dengi.ua</a></li>
+						</ul>
+					</form>
+					</div></div>
+				<!--/Right -->
+				</div>
+			<!--/logo_container -->
+			</div>
+
+			<!--узкая левая колонка -->
+			<div class="Left">
+<div class="block_gamma_gradient mail_login"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://mail.i.ua/" title="войти в раздел и проверить почту">Почта</a></h2>
+<form name="lform" method="post" action="https://passport.i.ua/login/" onsubmit="return ih_login(this)">
+	<input type="hidden" name="_subm" value="lform" />
+	<input type="hidden" name="scode" value="c6198921173378493a591ca874ea8b4d" />
+	<input type="hidden" name="_url" value="http://mbox.i.ua/?_rand=1509628692&phcode=3bb6b066d8dc733a2dcb3e4e4af4e1be" />
+	<input type="hidden" name="cpass" />
+	<input type="hidden" name="_rand" />
+	<!--<p class="error"><span>Сообщение об ошибке</span></p> -->
+	<ul class="list_cols_2 clear">
+		<li>
+			<p class="field_title">Логин</p><p><input type="text" name="login" tabindex="1" /></p>
+			<a href="//passport.i.ua/recover/" class="float_right">напомнить</a>
+			<p class="field_title">Пароль</p><input type="password" name="pass" tabindex="2" maxlength="32" />
+		</li>
+		<li>
+			<br>
+			<p><select name="domn" tabindex="3"><option value="i.ua">i.ua<option value="ua.fm">ua.fm<option value="email.ua">email.ua<option value="3g.ua">3g.ua</select></p>
+			<label for="c00"><input type="checkbox" name="auth_type" value="1" id="c00" tabindex="4" > запомнить меня</label>
+		</li>
+	</ul>
+	<p><input type="submit" value="Войти" tabIndex="5" title="Вход на почту" /></p>
+</form><a href="//passport.i.ua/">Регистрация</a>
+</div>
+</div><div class="block_gamma_gradient site_sections"><div class="tl"></div><div class="br"></div><div class="content clear"><h2>Разделы</h2><ul class="site_sections">
+<li><a href="http://mail.i.ua/" title="Почта" class="mail_16"><i></i>Почта</a></li> <li><a href="http://job.i.ua/" title="Работа" class="job_16"><i></i>Работа</a></li> <li><a href="http://catalog.i.ua/" title="Каталог" class="catalog_16"><i></i>Каталог</a></li> <li><a href="http://links.i.ua/" title="Закладки" class="links_16"><i></i>Закладки</a></li> <li><a href="http://rss.i.ua/" title="RSS" class="rss_16"><i></i>RSS</a></li> <li><a href="http://board.i.ua/" title="Объявления" class="board_16"><i></i>Объявления</a></li> <li><a href="http://weather.i.ua/" title="Погода" class="weather_16"><i></i>Погода</a></li> <li><a href="http://goroskop.i.ua/" title="Гороскоп" class="goroskop_16"><i></i>Гороскоп</a></li> <li><a href="http://tv.i.ua/" title="Телепрограмма" class="tv_16"><i></i>Телепрограмма</a></li> <li><a href="http://finance.i.ua/" title="Курсы валют" class="finance_16"><i></i>Курсы валют</a></li> <li><a href="http://shop.i.ua/" title="Магазины" class="shop_16"><i></i>Магазины</a></li> <li><a href="http://perevod.i.ua/" title="Переводчик" class="perevod_16"><i></i>Переводчик</a></li> <li><a href="http://narod.i.ua/" title="Народ" class="narod_16"><i></i>Народ</a></li> <li><a href="http://prikol.i.ua/" title="Приколы" class="prikol_16"><i></i>Приколы</a></li> <li><a href="http://love.i.ua/" title="Знакомства" class="love_16"><i></i>Знакомства</a></li> <li><a href="http://photo.i.ua/" title="Фотоальбомы" class="photo_16"><i></i>Фотоальбомы</a></li> <li><a href="http://blog.i.ua/" title="Блоги" class="blog_16"><i></i>Блоги</a></li> <li><a href="http://video.i.ua/" title="Видео" class="video_16"><i></i>Видео</a></li> <li><a href="http://oboi.i.ua/" title="Обои" class="oboi_16"><i></i>Обои</a></li> <li><a href="http://cards.i.ua/" title="Открытки" class="cards_16"><i></i>Открытки</a></li> <li><a href="http://map.i.ua/" title="Карты" class="map_16"><i></i>Карты</a></li> <li><a href="http://news.i.ua/" title="Новости" class="news_16"><i></i>Новости</a></li> <li><a href="http://kino.i.ua/" title="Кино" class="kino_16"><i></i>Кино</a></li> <li><a href="http://org.i.ua/" title="Органайзер" class="org_16"><i></i>Органайзер</a></li> <li><a href="http://files.i.ua/" title="Файлы" class="files_16"><i></i>Файлы</a></li> <li><a href="http://cook.i.ua/" title="Рецепты" class="cook_16"><i></i>Рецепты</a></li> <li><a href="http://music.i.ua/" title="Музыка" class="music_16"><i></i>Музыка</a></li> <li><a href="http://otvet.i.ua/" title="Ответы" class="otvet_16"><i></i>Ответы</a></li> <li><a href="http://group.i.ua/" title="Группы" class="group_16"><i></i>Группы</a></li> <li><a href="http://radio.i.ua/" title="Радио" class="red radio_16"><i></i>Радио</a></li> </ul></div>
+</div><div class="block_gamma_gradient text_list"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://catalog.i.ua" title="перейти к каталогу и статистике сайтов">Каталог</a></h2><ul class="list_simple separate_down">
+	<li><a href="http://catalog.i.ua/site_of_the_day/">Сайты дня</a></li>
+</ul>
+<ul class="list_simple">
+<li><a href="http://catalog.i.ua/catalog/1/"">Авто</a></li><li><a href="http://catalog.i.ua/catalog/5/"">Бизнес</a></li><li><a href="http://catalog.i.ua/catalog/6/"">Дом</a></li><li><a href="http://catalog.i.ua/catalog/7/"">Здоровье</a></li><li><a href="http://catalog.i.ua/catalog/8/"">Интернет</a></li><li><a href="http://catalog.i.ua/catalog/9/"">Компьютеры</a></li><li><a href="http://catalog.i.ua/catalog/10/"">Культура</a></li><li><a href="http://catalog.i.ua/catalog/17/"">Образование</a></li><li><a href="http://catalog.i.ua/catalog/11/"">Общество</a></li><li><a href="http://catalog.i.ua/catalog/12/"">Отдых</a></li><li><a href="http://catalog.i.ua/catalog/13/"">Работа</a></li><li><a href="http://catalog.i.ua/catalog/14/"">Развлечения</a></li><li><a href="http://catalog.i.ua/catalog/854/"">Связь</a></li><li><a href="http://catalog.i.ua/catalog/40/"">СМИ</a></li><li><a href="http://catalog.i.ua/catalog/15/"">Спорт</a></li><li><a href="http://catalog.i.ua/catalog/16/"">Справки</a></li></ul></div>
+</div>
+		<div class="block_gamma_gradient">
+			<div class="tl"></div>
+			<div class="br"></div>
+			<div class="content clear">
+			<ul class="list_simple">
+				<h2><a href="http://tv.ua/" target="_blank">Теленеделя</a></h2>
+				<li style="margin-bottom: 10px;"><a href="https://tv.ua/multimedia/video/veshchdok-pravaja-ruka-efir-ot-02-11-2017-99686.html" target="_blank">
+				<span class="_img">
+					<img class="thumbnail" style="max-width: 100%" src="//i3.i.ua/tv_ua_news/small/1.jpg">
+				</span>
+				<span class="_title">Вещдок: правая рука (эфир от 02.11.2017)</span>
+			</a></li><li style="margin-bottom: 10px;"><a href="https://tv.ua/news/showbiz/chto-proishodit-v-lichnoy-zhizni-reginy-todarenko-99671.html" target="_blank">
+				<span class="_img">
+					<img class="thumbnail" style="max-width: 100%" src="//i3.i.ua/tv_ua_news/small/5.jpg">
+				</span>
+				<span class="_title">Что происходит в личной жизни Регины Тодоренко?</span>
+			</a></li>
+				</ul>
+			</div>
+		</div>			<!--/Left -->
+			</div>
+
+			<!--центральная колонка -->
+			<div class="Center">
+				<div class="Wrap">
+<script type="text/javascript"><!--
+if (typeof(I_Main) == "undefined") {
+	I_Main = {scroll:{duration:{},intervals:{}}};
+	I_Main.scroll.setIntervals = function (prefix)
+	{
+	if (typeof(I_Main.scroll.intervals[prefix]) != "undefined" && I_Main.scroll.intervals[prefix])
+		return;
+	if (typeof(I_Main.scroll.duration[prefix])!="undefined" && I_Main.scroll.duration[prefix] > 0)
+		I_Main.scroll.intervals[prefix] = window.setInterval(function () { I_Main.scroll.scroll(prefix, 2, 1); }, I_Main.scroll.duration[prefix]);
+	}
+	I_Main.scroll.clearInterval = function (prefix)
+	{
+	if (typeof(I_Main.scroll.intervals[prefix]) != "undefined") {
+		clearInterval(I_Main.scroll.intervals[prefix]);
+		I_Main.scroll.intervals[prefix] = undefined;
+	}
+	}
+}
+I_Main.scroll.preinit = function (prefix)
+{
+	I_Main.scroll.duration[prefix] = 0;
+	var tmp = dge('motioncontainer'+prefix);
+	if (tmp) {
+		UtilLite.addEvent(tmp, 'mouseover', function() {I_Main.scroll.clearInterval(prefix)});
+	}
+	var tmp = dge('motionleft'+prefix);
+	if (tmp)
+		tmp = tmp.parentNode;
+	if (tmp) {
+		UtilLite.addEvent(tmp, 'mouseover', function() {I_Main.scroll.clearInterval(prefix)});
+	}
+	UtilLite.addEvent(window.document, 'blur', function() {I_Main.scroll.clearInterval(prefix)});
+}
+UtilLite.addEvent(window, 'load', function () {
+	for (var p in I_Main.scroll.duration)
+		I_Main.scroll.init(p);
+	I_Main.activity.g();
+});
+//-->
+</script>
+<div class="block_gamma_gradient block_important"><div class="tl"></div><div class="br"></div><div class="content clear"><i class="close_button"
+onclick="this.parentNode.parentNode.style.display='none'" title="закрыть"></i> <big><a href="/settings.php?_rand=1509628692" onclick="return i_showFloat(1, '//www.i.ua/settings.php?resolution=' + screen.width);">Настройте</a>  эту страницу на свой вкус.</big>
+</div></div>
+<div class="block_gamma_gradient news"><div class="tl"></div><div class="br"></div><div class="content clear"><h2><a href="http://news.i.ua/" title="прочитать все новости">Новости</a></h2><div class="news">	<div class="scrolling_blocks clear" id="motioncontainertn"><div><ul id="motionslidertn" style="left: 0px;" ><li mdi="0"><a href="http://news.i.ua/click/4445765/2040534832/1" class="item" rel="nofollow" target="_blank"><i><img src="//i3.i.ua/news/tn/5/6/44457_1.jpg"><ins>Narodna-pravda.ua</ins></i><span>Сыну Кернеса внезапно подарили квартиру за 4,5 миллиона</span>Главврач КУОЗ «Харьковская городская клиническая многопрофильная больница №17» получил 4,5 млн гривен от продажи недвижимости.</a></li><li mdi="1"><a href="http://news.i.ua/click/4445565/1371271972/1" class="item" rel="nofollow" target="_blank"><i><img src="//i3.i.ua/news/tn/1/5/44456_1.jpg"><ins>Interfax.com.ua</ins></i><span>В СБУ есть видео доказывающее, что Луганский аэропорт захватила группа &quot;Вагнера&quot;</span>На видеозаписи боец группы &quot;Вагнера&quot; признается, что именно эта группировка участвовала в захвате.</a></li><li mdi="2"><a href="http://news.i.ua/click/4445655/976195583/1" class="item" rel="nofollow" target="_blank"><i><img src="//i3.i.ua/news/tn/5/5/44456_1.jpg"><ins>Narodna-pravda.ua</ins></i><span>Украинцев шокировали новые «прайсы» на медицинские услуги</span>Обнародованы впечатляющие списки цен на отдельные медуслуги. Какие заведения подготовили такие «прайсы», и как они касаются медреформы.</a></li></ul></div></div>
+<script language="javascript" type="text/javascript"><!--
+var scroll_tn = {args:["motioncontainertn", "motionslidertn", "motionlefttn", "motionrighttn"]};
+	scroll_tn.data = {'0':{'h':'http://news.i.ua/click/4445765/2040534832/1','s':'//i3.i.ua/news/tn/5/6/44457_1.jpg','n':'Сыну Кернеса внезапно подарили квартиру за 4,5 миллиона','t':'Главврач КУОЗ «Харьковская городская клиническая многопрофильная больница №17» получил 4,5 млн гривен от продажи недвижимости.','p':'Narodna-pravda.ua'},'1':{'h':'http://news.i.ua/click/4445565/1371271972/1','s':'//i3.i.ua/news/tn/1/5/44456_1.jpg','n':'В СБУ есть видео доказывающее, что Луганский аэропорт захватила группа &quot;Вагнера&quot;','t':'На видеозаписи боец группы &quot;Вагнера&quot; признается, что именно эта группировка участвовала в захвате.','p':'Interfax.com.ua'},'2':{'h':'http://news.i.ua/click/4445655/976195583/1','s':'//i3.i.ua/news/tn/5/5/44456_1.jpg','n':'Украинцев шокировали новые «прайсы» на медицинские услуги','t':'Обнародованы впечатляющие списки цен на отдельные медуслуги. Какие заведения подготовили такие «прайсы», и как они касаются медреформы.','p':'Narodna-pravda.ua'},'3':{'h':'http://news.i.ua/click/4445483/1527874115/1','s':'//i3.i.ua/news/tn/7/6/44451_1.jpg','n':'В Херсонской области прошли испытания зенитных управляемых ракет','t':'Испытания проходят на временной площадке возле населенного пункта Александровка. Опубликованы фото с учений.','p':'Comments.ua'},'4':{'h':'http://news.i.ua/click/4445358/264131144/1','s':'//i3.i.ua/news/tn/4/8/44453_1.jpg','n':'Украина и ОАЭ договорились о безвизовом режиме','t':'Состоялись переговоры между Петром Порошенко и премьер-министром ОАЭ, правителем Эмирата Дубай шейхом Мухаммедом бин Рашид Аль Мактумой.','p':'UNN'},'5':{'h':'http://news.i.ua/click/4445396/1977037882/1','s':'//i3.i.ua/news/tn/6/9/44453_1.jpg','n':'Как зарабатывают дети политиков: Луценко пилит лес, а Полторак - айтишник','t':'Некоторые отпрыски представителей украинской власти уже успешно устроились во взрослой жизни.','p':'Dengi.ua'},'6':{'h':'http://news.i.ua/click/4445147/1780841097/1','s':'//i3.i.ua/news/tn/7/4/44451_1.jpg','n':'Почему Украина не могла оставить себе ядерный статус','t':'Если бы Украина оставила у себя 200 ядерных боеголовок, то после 1997 года могли бы начаться &quot;неконтролируемые процессы &quot;.','p':'Телеканал 24'},'7':{'h':'http://news.i.ua/click/4443751/1726492445/1','s':'//i3.i.ua/news/tn/9/5/44432_1.jpg','n':'Украинские пенсии: какие деньги получены сейчас и на что надеяться в будущем','t':'Последующий рост выплат зависит от экономической ситуации в стране.','p':'Facenews.ua'},'8':{'h':'http://news.i.ua/click/4445489/826654811/1','s':'//i3.i.ua/news/tn/1/4/44450_1.jpg','n':'В Украине стартует выплата денег сэкономленных субсидий','t':'Со 2 по 15 ноября будет происходить выплата компенсаций суммы неиспользованной жилищной субсидии.','p':'Телеканал 24'},'9':{'h':'http://news.i.ua/click/4444251/384453519/1','s':'//i3.i.ua/news/tn/1/5/44442_1.jpg','n':'Сына Авакова выпустили на свободу','t':'Обвиняемого в причастности к хищению 14 миллионов гривен, служители Фемиды отпустили под личные обязательства','p':'РИА Новости Украина'},'10':{'h':'http://news.i.ua/click/4443164/1134852961/1','s':'//i3.i.ua/news/tn/4/6/44431_1.jpg','n':'Украинцев ошеломила роскошь элитного жилья в Киеве','t':'Возрос спрос на элитное жилье с панорамными окнами на Днепр или Киево-Печерскую Лавру, в которых квадратный метр стоит как целая квартира.','p':'Narodna-pravda.ua'},'11':{'h':'http://news.i.ua/click/4443650/167031349/1','s':'//i3.i.ua/news/tn/0/5/44436_1.jpg','n':'Обыски у сотрудников МВД: новые подробности','t':'В Нацполиции рассказали об обысках, проведенных детективами НАБУ и САП.','p':'Ракурс'},'12':{'h':'http://news.i.ua/click/4443317/1981959876/1','s':'//i3.i.ua/news/tn/0/9/44432_1.jpg','n':'Боевик &quot;Ленин&quot; виновный в убийстве Хараберюша','t':'Служба безопасности Украины обнародовала фото Василия Евдокимова, который причастен к убийству полковника спецслужбы.','p':'Ракурс'},'13':{'h':'http://news.i.ua/click/4443566/496757920/1','s':'//i3.i.ua/news/tn/6/6/44435_1.jpg','n':'Водителей уже начали штрафовать по-новому','t':'Вступили в силу изменения в некоторые украинские законы.','p':'Narodna-pravda.ua'},'14':{'h':'http://news.i.ua/click/4443078/82013683/1','s':'//i3.i.ua/news/tn/0/0/44427_1.jpg','n':'Украина присоединилась к новому Шелковому пути из Китая','t':'Китайская сторона согласовала нить графика поезда, который будет проходить из Чжэнчжоу через территорию Украины в Евросоюз.','p':'Dengi.ua'}};
+	scroll_tn.data_count = 15;
+	scroll_tn.data_position = 0;
+	scroll_tn.slide_by = 3;
+	scroll_tn.show_by = 3;
+	scroll_tn.name = 'scroll__tn';
+
+	scroll_tn.speed = 25;
+scroll_tn.getOffset = function ()
+{
+	this.offset = 185;
+	return this.offset;
+}
+//-->
+</script>
+					<div class="block_controls clear">
+				<span class="description"><i
+					onclick="I_Main.scroll.scroll('tn', 1, 2)" class="previous" title="Предыдущий" id="motionlefttn"></i><i
+					onclick="I_Main.scroll.scroll('tn', 2, 2)" class="next" title="Следующий" id="motionrighttn" ></i>1 - 3 из 15</span>
+											<script type="text/javascript"><!--
+							I_Main.scroll.preinit('tn');
+							//-->
+						</script>
+													<ul class="navigation_tabs">
+								<li class="current" onclick="I_Main.news.show_tab(this, 0, '_.r28', 15);"><span>Все</span></li><li  onclick="I_Main.news.show_tab(this, 1, '_.r28', 15);"><span>Политика</span></li><li  onclick="I_Main.news.show_tab(this, 4, '_.r28', 15);"><span>Бизнес</span></li><li  onclick="I_Main.news.show_tab(this, 2, '_.r28', 15);"><span>В мире</span></li><li  onclick="I_Main.news.show_tab(this, 5, '_.r28', 15);"><span>Спорт</span></li>							</ul>
+						</div>
+						<div>
+							<ul class="list_simple list_time" id="news_cont"><li><span class="time">15:13</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4446011/1911351545/2">Коломойский перешел в атаку</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4446011/1911351545/2">Facenews.ua</a></li><li><span class="time">15:09</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445994/778883040/2">Украина внесла в ООН &quot;жесткую&quot; резолюцию по Крыму</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445994/778883040/2">РИА Новости Украина</a></li><li><span class="time">15:09</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445995/28360590/2">В Харькове внедорожник припарковался возле цветов в память о жертвах ДТП</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445995/28360590/2">РИА Новости Украина</a></li><li><span class="time">15:07</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445998/904844804/2">Аргентинец стал лучшим бомбардиром в истории &quot;Манчестер Сити&quot;</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445998/904844804/2">Comments.ua</a></li><li><span class="time">15:07</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445988/747482508/2">Кличко: В Киеве около 800 домов остались без отопления</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445988/747482508/2">Facenews.ua</a></li><li><span class="time">15:01</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445974/1892523712/2">17 лет назад под Таращей нашли тело Георгия Гонгадзе</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445974/1892523712/2">Comments.ua</a></li><li><span class="time">14:59</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445975/1450072561/2">Британцы назвали словосочетание года</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445975/1450072561/2">Comments.ua</a></li><li><span class="time">14:56</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445976/1142069177/2">В Австралии запретят восхождение на всемирно известную гору</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445976/1142069177/2">Comments.ua</a></li><li><span class="time">14:49</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445944/1716384056/2">Обнародованы фамилии наемников ЧВК &quot;Вагнера&quot;, погибших под Дебальцево</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445944/1716384056/2">Comments.ua</a></li><li><span class="time">14:49</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445938/991666543/2">Как я провел один день в школе сына</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445938/991666543/2">Facenews.ua</a></li><li><span class="time">14:42</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445939/1062940016/2">Информатора ДНР приговорили к восьми годам тюрьмы</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445939/1062940016/2">Bigmir.net</a></li><li><span class="time">14:41</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445914/401192969/2">Новые дети войны - сироты равнодушного государства</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445914/401192969/2">РИА Новости Украина</a></li><li><span class="time">14:31</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445886/1542577846/2">Вышел международный трейлер нового эпизода &quot;Звездных войн&quot;</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445886/1542577846/2">РИА Новости Украина</a></li><li><span class="time">14:27</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445880/1330355113/2">Активисты &quot;МихоМитинга&quot; решили не объявлять мобилизацию под Раду</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445880/1330355113/2">Comments.ua</a></li><li><span class="time">14:23</span><a rel="nofollow" target="_blank" href="http://news.i.ua/click/4445857/551472073/2">Когда украинцы получат деньги за сэкономленный газ, свет и воду</a> <a class="date" rel="nofollow" target="_blank" href="http://news.i.ua/click/4445857/551472073/2">Facenews.ua</a></li></ul>
+					<ul class="list_simple list_time"><li><a rel="nofollow" target="_blank" href="http://h.holder.com.ua/c?tz&amp;z1585&amp;b141167&amp;s03908&amp;r[rndID]&amp;u"><i>R</i>&quot;Квартиры для инвестиций. Доходность до 40% годовых.&quot;</a></li></ul>					</div>
+										<div class="out_of_range">
+							<div class="block_controls clear"><span  class="show" id="news_show" onclick="I_Main.news.show(this, 0, '_.r28', '15')"><i></i>больше новостей<i></i></span><span class="description"><i
+						onclick="I_Main.scroll.scroll('ln', 1, 2)" class="previous" title="Предыдущий" id="motionleftln"></i><i
+						onclick="I_Main.scroll.scroll('ln', 2, 2)" class="next" title="Следующий" id="motionrightln"></i>1 - 2 из 20</span>
+													<script type="text/javascript"><!--
+								I_Main.scroll.preinit('ln');
+								//-->
+							</script>
+														</div>
+						<div class="scrolling_blocks clear" id="motioncontainerln"><div><ul id="motionsliderln" style="left: 0px;" ><li mdi="0"><a href="http://news.i.ua/click/4445723/358019181/1" rel="nofollow" target="_blank" class="item"><i><img src="//i3.i.ua/news/tn/3/2/44457_1.jpg"></i><span>Топ-5 шедевров уличной еды со всего мира</span></a></li><li mdi="1"><a href="http://news.i.ua/click/4445639/1274405289/1" rel="nofollow" target="_blank" class="item"><i><img src="//i3.i.ua/news/tn/9/3/44456_1.jpg"></i><span>&quot;Умная духовка&quot;: готовить как кулинар</span></a></li></ul></div></div>
+<script language="javascript" type="text/javascript"><!--
+var scroll_ln = {args:["motioncontainerln", "motionsliderln", "motionleftln", "motionrightln"]};
+	scroll_ln.data = {'0':{'h':'http://news.i.ua/click/4445723/358019181/1','s':'//i3.i.ua/news/tn/3/2/44457_1.jpg','n':'Топ-5 шедевров уличной еды со всего мира'},'1':{'h':'http://news.i.ua/click/4445639/1274405289/1','s':'//i3.i.ua/news/tn/9/3/44456_1.jpg','n':'&quot;Умная духовка&quot;: готовить как кулинар'},'2':{'h':'http://news.i.ua/click/4445611/1922997450/1','s':'//i3.i.ua/news/tn/1/1/44456_1.jpg','n':'Защитник сборной Украины заинтересовал Майнца'},'3':{'h':'http://news.i.ua/click/4445548/688938421/1','s':'//i3.i.ua/news/tn/8/4/44455_1.jpg','n':'5 приложений для бесконтактных платежей'},'4':{'h':'http://news.i.ua/click/4445474/1438693640/1','s':'//i3.i.ua/news/tn/4/7/44454_1.jpg','n':'Болельщик сбил беспилотник рулоном бумаги'},'5':{'h':'http://news.i.ua/click/4445419/374024962/1','s':'//i3.i.ua/news/tn/9/1/44454_1.jpg','n':'Звезда Реала был сбит с ног &quot;призраком&quot;. Видео'},'6':{'h':'http://news.i.ua/click/4445325/820822370/1','s':'//i3.i.ua/news/tn/5/2/44453_1.jpg','n':'Маркевич определил лучшего игрока и тренера'},'7':{'h':'http://news.i.ua/click/4444424/1843470569/1','s':'//i3.i.ua/news/tn/4/2/44444_1.jpg','n':'Шахтер: тридцатая домашняя победа в ЛЧ'},'8':{'h':'http://news.i.ua/click/4445331/379532561/1','s':'//i3.i.ua/news/tn/1/3/44453_1.jpg','n':'Когда ребенка можно оставить дома одного'},'9':{'h':'http://news.i.ua/click/4445327/1953842118/1','s':'//i3.i.ua/news/tn/7/2/44453_1.jpg','n':'Арсен Венгер должен 25 коп дарованию Арсенала'},'10':{'h':'http://news.i.ua/click/4445310/1917389734/1','s':'//i3.i.ua/news/tn/0/1/44453_1.jpg','n':'Fredensborg house: суровый датский минимализм'},'11':{'h':'http://news.i.ua/click/4445293/793217021/1','s':'//i3.i.ua/news/tn/3/9/44452_1.jpg','n':'Список игроков, вызванных в сборную U-21'},'12':{'h':'http://news.i.ua/click/4445287/928168808/1','s':'//i3.i.ua/news/tn/7/8/44452_1.jpg','n':'Вратарь Тоттенхэма мог стать теннисистом'},'13':{'h':'http://news.i.ua/click/4445269/1582678773/1','s':'//i3.i.ua/news/tn/9/6/44452_1.jpg','n':'Герой футбольного дня. Марлос / Бернард'},'14':{'h':'http://news.i.ua/click/4445146/1214831451/1','s':'//i3.i.ua/news/tn/6/4/44451_1.jpg','n':'Текстильные скелеты животных'},'15':{'h':'http://news.i.ua/click/4445339/810984153/1','s':'//i3.i.ua/news/tn/7/0/44444_1.jpg','n':'Шахтер получил выход в еврокубковую весну'},'16':{'h':'http://news.i.ua/click/4444411/205356676/1','s':'//i3.i.ua/news/tn/1/1/44444_1.jpg','n':'Агуэро стал лучшим бомбардиром'},'17':{'h':'http://news.i.ua/click/4444880/1898508353/1','s':'//i3.i.ua/news/tn/0/8/44448_1.jpg','n':'Гороскоп красоты 2018'},'18':{'h':'http://news.i.ua/click/4444800/1074359534/1','s':'//i3.i.ua/news/tn/0/0/44448_1.jpg','n':'Таинство света в интерьере'},'19':{'h':'http://news.i.ua/click/4444662/1599849108/1','s':'//i3.i.ua/news/tn/2/6/44446_1.jpg','n':'6 продуктов, из-за которых ты не худеешь'}};
+	scroll_ln.data_count = 20;
+	scroll_ln.data_position = 0;
+	scroll_ln.slide_by = 2;
+	scroll_ln.show_by = 2;
+	scroll_ln.name = 'scroll__ln';
+
+	scroll_ln.speed = 25;
+scroll_ln.getOffset = function ()
+{
+	this.offset = 275;
+	return this.offset;
+}
+//-->
+</script>
+						</div>				</div>
+				</div></div><div class="block_gamma_gradient sites"><div class="tl"></div><div class="br"></div><div class="content clear">
+<script type="text/javascript" language="JavaScript">
+</script>
+<h2><a href="http://catalog.i.ua/site_of_the_day/" title="перейти к популярным сайтам">Сайты дня</a></h2>
+<span class="description"><i class="previous" title="01.11" id="SDprev_2100" onclick="I_Main.refreshSites(20171101,2100)"></i><i class="next" id="SDnext_2100" onclick="void(0);"></i><span id="SDday_2100">02.11&nbsp;</span></span>
+<ul class="list_underlined clear">
+	<li>
+		<dl class="preview_left clear">
+			<dt><a rel="nofollow" target="_blank" id="SDlink00_2100" href="http://catalog.i.ua/click/207086" title="Все для телефонов"><i style="background-image:url(//i3.i.ua/rating/6/207086.jpg);"></i></a><ins id="clicks0_2100">88</ins></dt>
+			<dd>
+				<p><a rel="nofollow" id="SDlink10_2100" target="_blank" href="http://catalog.i.ua/click/207086">Все для телефонов</a><br />
+				<span id="SDurl0_2100" class="add_bookmark">chehol.ua<a id="SDbook0_2100" href="http://links.i.ua/add/?url=chehol.ua&name=%C2%F1%E5+%E4%EB%FF+%F2%E5%EB%E5%F4%EE%ED%EE%E2" title="добавить в закладки">+</a></span></p>
+				<span id="SDdescr0_2100">Посетив этот сайт вы узнаете, как можно защитить свой телефон от ударов или царапин</span><br />
+				<a id="SDcat0_2100" href="http://catalog.i.ua/catalog/900/" class="description">Бытовая техника и электроника</a>
+			</dd>
+		</dl>
+	</li>
+	<li>
+		<dl class="preview_left clear">
+			<dt><a rel="nofollow" target="_blank" id="SDlink01_2100" href="http://catalog.i.ua/click/207087" title="Крутой блокнот"><i style="background-image:url(//i3.i.ua/rating/7/207087.jpg);"></i></a><ins id="clicks1_2100">103</ins></dt>
+			<dd>
+				<p><a rel="nofollow" id="SDlink11_2100" target="_blank" href="http://catalog.i.ua/click/207087">Крутой блокнот</a><br />
+				<span id="SDurl1_2100" class="add_bookmark">krutoy-bloknot.com.ua<a id="SDbook1_2100" href="http://links.i.ua/add/?url=krutoy-bloknot.com.ua&name=%CA%F0%F3%F2%EE%E9+%E1%EB%EE%EA%ED%EE%F2" title="добавить в закладки">+</a></span></p>
+				<span id="SDdescr1_2100">Здесь можно купить оригинальный блокнот для бизнеса, имиджа или на подарок</span><br />
+				<a id="SDcat1_2100" href="http://catalog.i.ua/catalog/842/" class="description">Интернет-магазины</a>
+			</dd>
+		</dl>
+	</li>
+</ul></div>
+</div><div class="block_gamma_gradient iua_review"><div class="tl"></div><div class="br"></div>
+	<div class="content clear">
+		<h2>Обзор сайта</h2><span class="description"><i class="previous" onclick="I_Main.scroll.scroll('os', 1, 2)" id="motionleftos"></i><i class="next" onclick="I_Main.scroll.scroll('os', 2, 2)" id="motionrightos"></i></span>	<div class="scrolling_blocks clear" id="motioncontaineros"><div><ul id="motionslideros" style="left: 0px;" ><li mdi="8"><a onclick="I_Main.site_review(2770)" href="http://prikol.i.ua/view/1094821/" class="item"><i style="background-image: url(//i3.i.ua/sr/7/0/2770.jpg);"></i><span>Приколы: Хорошего настроения!</span></a></li><li mdi="9"><a onclick="I_Main.site_review(2769)" href="http://cook.i.ua/user/6803635/16273" class="item"><i style="background-image: url(//i3.i.ua/sr/6/9/2769.jpg);"></i><span>Рецепт: Квашеные грузди</span></a></li><li mdi="10"><a onclick="I_Main.site_review(2768)" href="http://video.i.ua/user/1911/47317/463428/" class="item"><i style="background-image: url(//i3.i.ua/sr/6/8/2768.jpg);"></i><span>Видео: Как складывать одежду</span></a></li></ul></div></div>
+<script language="javascript" type="text/javascript"><!--
+var scroll_os = {args:["motioncontaineros", "motionslideros", "motionleftos", "motionrightos"]};
+	scroll_os.data = {'0':{'h':'http://prikol.i.ua/view/1095498/','s':'//i3.i.ua/sr/7/8/2778.jpg','n':'Приколы: Хорошего настроения!','i':'2778'},'1':{'h':'http://cook.i.ua/user/3411136/13444/','s':'//i3.i.ua/sr/7/7/2777.jpg','n':'Рецепты:  Мясная гармошка','i':'2777'},'2':{'h':'http://video.i.ua/user/3698736/77516/463961/','s':'//i3.i.ua/sr/7/6/2776.jpg','n':'Видео: котенок встретил огромного питбуля','i':'2776'},'3':{'h':'http://oboi.i.ua/user/861466/2/594547','s':'//i3.i.ua/sr/7/5/2775.jpg','n':'Обои: Рассвет','i':'2775'},'4':{'h':'http://cards.i.ua/user/2619772/5/309258','s':'//i3.i.ua/sr/7/4/2774.jpg','n':'Открытки: Пусть будет день, как чистая слеза','i':'2774'},'5':{'h':'http://prikol.i.ua/view/1092189/','s':'//i3.i.ua/sr/7/3/2773.jpg','n':'Приколы: Биолюминесценции','i':'2773'},'6':{'h':'http://video.i.ua/user/1911/47317/463709/','s':'//i3.i.ua/sr/7/2/2772.jpg','n':'Видео: Больше не пою в наушниках','i':'2772'},'7':{'h':'http://kino.i.ua/film/6956','s':'//i3.i.ua/sr/7/1/2771.jpg','n':'Кино: Банда котиков','i':'2771'},'8':{'h':'http://prikol.i.ua/view/1094821/','s':'//i3.i.ua/sr/7/0/2770.jpg','n':'Приколы: Хорошего настроения!','i':'2770'},'9':{'h':'http://cook.i.ua/user/6803635/16273','s':'//i3.i.ua/sr/6/9/2769.jpg','n':'Рецепт: Квашеные грузди','i':'2769'},'10':{'h':'http://video.i.ua/user/1911/47317/463428/','s':'//i3.i.ua/sr/6/8/2768.jpg','n':'Видео: Как складывать одежду','i':'2768'},'11':{'h':'http://cards.i.ua/user/4397569/5/304529','s':'//i3.i.ua/sr/6/7/2767.jpg','n':'Открытки: Ягодного настроения!','i':'2767'},'12':{'h':'http://prikol.i.ua/view/1094375/','s':'//i3.i.ua/sr/6/6/2766.jpg','n':'Приколы: Самый крутой батут нашего детства','i':'2766'},'13':{'h':'http://oboi.i.ua/user/861466/3/594317/','s':'//i3.i.ua/sr/6/5/2765.jpg','n':'Обои: Горный пейзаж','i':'2765'},'14':{'h':'http://blog.i.ua/user/461471/2035825/','s':'//i3.i.ua/sr/6/4/2764.jpg','n':'Блоги: Осенью','i':'2764'},'15':{'h':'http://video.i.ua/user/29279/46396/462974/','s':'//i3.i.ua/sr/6/3/2763.jpg','n':'Видео: Кот возвращается домой','i':'2763'},'16':{'h':'http://prikol.i.ua/view/1093662/','s':'//i3.i.ua/sr/6/2/2762.jpg','n':'Приколы: Игра теней','i':'2762'},'17':{'h':'http://photo.i.ua/user/4239411/500075/14760330/','s':'//i3.i.ua/sr/6/1/2761.jpg','n':'Фото: Мадрид','i':'2761'},'18':{'h':'http://cards.i.ua/user/2619772/5/308905','s':'//i3.i.ua/sr/6/0/2760.jpg','n':'Открытки: Я хочу подарить тебе солнце ...','i':'2760'},'19':{'h':'http://blog.i.ua/community/2311/2034331/','s':'//i3.i.ua/sr/5/9/2759.jpg','n':'Блоги: Каменец-Подольская крепость','i':'2759'}};
+	scroll_os.data_count = 20;
+	scroll_os.data_position = 8;
+	scroll_os.slide_by = 3;
+	scroll_os.show_by = 3;
+	scroll_os.name = 'scroll__os';
+
+	scroll_os.speed = 25;
+scroll_os.getOffset = function ()
+{
+	this.offset = 185;
+	return this.offset;
+}
+//-->
+</script>
+<script type="text/javascript"><!--
+I_Main.scroll.preinit('os');
+//-->
+</script>
+</div>
+</div>				<!--/Wrap < Center -->
+				</div>
+
+			<!--/Center < Left -->
+			</div>
+		<!--/Left -->
+		</div>
+	<!--/Body -->
+	</div>
+<!--/Branding_body -->
+</div>
+<div class="Branding_footer  page_medium clear">
+	<div class="branding_left"></div>
+	<div class="branding_right"></div>
+	<div class="Footer clear">
+<style type="text/css" media="screen">
+.footer_Adv {
+	position: relative;
+	border-bottom: 1px solid #DDD;
+	padding: 0 0 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+.footer_Adv	b,
+.footer_Adv	ul {
+	display: inline-block;
+	vertical-align: middle;	
+	}
+.footer_Adv	b {
+	width: 24%;
+	/*text-align: center;*/
+	}	
+.footer_Adv ul {	
+	margin: 0;
+	padding: 0;
+	border-left: 1px dotted #DDD;
+	width: 75%;
+	//display: inline;
+	//padding-bottom: .5em;
+	}
+.footer_Adv li {
+	float: left;
+	list-style: none;
+	width: 32%;
+	margin: 0 0 .5em 1%;
+	padding: 0;
+	}	
+.footer_Adv li a {
+	display: inline-block;	
+	margin: 0 0 0 20px;
+	color: #000;
+	}	
+.footer_Adv li i {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 4px 0 -20px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	}
+.footer_Adv .hit i {background-image: url(//i3.i.ua/v2/radio/i_hitfm_16.png);}
+.footer_Adv .kiss i {background-image: url(//i3.i.ua/v2/radio/i_kiss_16.png);}
+.footer_Adv .shanson i {background-image: url(//i3.i.ua/v2/radio/i_shanson_16.png);}
+.footer_Adv .retro i {background-image: url(//i3.i.ua/v2/radio/i_retrofm_16.png);}
+.footer_Adv .avtoradio i {background-image: url(//i3.i.ua/v2/radio/i_avtoradio_16.png);}
+.footer_Adv .russkoe i {background-image: url(//i3.i.ua/v2/radio/i_rusradio_16.png);}
+.footer_Adv .roks i {background-image: url(//i3.i.ua/v2/radio/i_roks_16.png);}
+.footer_Adv .europa i {background-image: url(//i3.i.ua/v2/radio/i_europaplus_16.png);}
+.footer_Adv .sharmanka i {background-image: url(//i3.i.ua/v2/radio/i_sharmanka_16.png);}
+
+.footer_Adv b a {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin: -20px 0 0 4%;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #000;
+	}
+</style>
+<style>
+  .umh_logo {
+    display: inline-block;
+    position: static !important;
+    width: 86px !important;
+    height: 60px !important;
+    margin: 0 auto !important;
+    background-image: url(//i3.i.ua/v2/homepage/partners/umh_logo.png);
+  }
+</style>
+<div class="footer_Adv clear">
+    <b><a href="http://umh.ua/" target="_blank" class="umh_logo"></a></b>
+    <ul class="partner_links_">
+      <li><a href="http://foodandmood.com.ua/" target="_blank" class="i_foodandmood">Food &amp; Mood</a>
+      </li><li><a href="http://gloss.ua/" target="_blank" class="i_gloss">Глосс</a>
+      </li><li><a href="http://tochka.net/" target="_blank" class="i_tochka">Tochka.net</a>
+      </li><li><a href="http://mport.ua/" target="_blank" class="i_mport">MPort</a>
+      </li><li><a href="http://dengi.ua/" target="_blank" class="i_dengi">Деньги</a>
+      </li><li><a href="http://bigmir.net/" target="_blank" class="i_bigmir">Bigmir)net</a>
+      </li><li><a href="http://kolobok.ua/" target="_blank" class="i_kolobok">Колобок</a>
+      </li><li><a href="http://smak.ua/" target="_blank" class="i_smak">Смак</a>
+      </li><li><a href="http://tv.ua/" target="_blank" class="i_telenedelia">Теленеделя</a>
+      </li><li><a href="http://vgorode.ua/" target="_blank" class="i_vgorode">Вгороде</a>
+      </li><li><a href="http://korrespondent.net/" target="_blank" class="i_korrespondent">КорреспонденТ</a>
+      </li><li><a href="http://ivona.bigmir.net/" target="_blank" class="i_ivona">Ivona</a>
+      </li>
+    </ul>
+  </div>
+<div class="copyright clear">
+	<p class="float_left">
+		&copy;&nbsp;I.UA, 2006&ndash;2017.<br />
+		<a href="http://help.i.ua/section/13/">Обратная связь</a>&nbsp; <a href="mailto:reklama@umh.com.ua" target="">Реклама на сайте</a>&nbsp; <a href="http://job.i.ua/info/vacancy/732836/">Вакансии</a>&nbsp; <a href="http://catalog.i.ua/choose_cat/" target="_blank">Добавить сайт</a>
+<br><small><a href="http://help.i.ua/agreement/">Пользовательское соглашение</a>&nbsp; <a href="http://help.i.ua/privacy-policy/">Политика конфиденциальности</a></small>	</p>
+
+	<p class="float_right">
+				<a href="//www.i.ua/" target="_blank" onclick="this.href='//i.ua/r.php?1';" title="Каталог сайтов, поиск в Украине"><img src="http://i.i.ua/r/3_1_2.png" border="0" width="88" height="31" /></a>	</p>
+</div>
+
+	<div class="round_ie"><i></i><i></i></div>
+	<!--/Footer -->
+</div>
+<!--/Branding_footer -->
+</div>
+<div class="Disclaimer"><i class="close_button" onclick="i_closeDisclaimer(this)" title="закрыть"></i>Для удобства пользования сайтом используются Cookies. Подробнее в <a href="http://help.i.ua/privacy-policy/" target="_blank">политике конфиденциальности</a></div>
+</body>
+</html>
