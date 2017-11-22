@@ -3,31 +3,64 @@ import time
 import ast
 import json
 import ebaysdk
-from ebaysdk.http import Connection as HTTP
+import settings
+import uuid
+from ebaysdk.http import Connection
 from ebaysdk.exception import ConnectionError
 from lxml import html
 from urllib.parse import quote
 from datetime import datetime as dt
+from user_agents import user_agents_list
+from random import randrange
+from requests import Request
 
 # Scheme
 # json response -> get first item url -> open item page and got reviews -> create complete json with all required data
 #
 
 #TODO
+# change ip 
+# make output in postgres db
 # Logging 
-# Generator format
-# Choose format for data ouptup (csv or json) 
-# Create separate file for settings
+# courutin format ?
 
-USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
-SECURITY_APPNAME = 'EugeneSh-bestCoff-PRD-35d7504c4-714318e1'
-URL = 'http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0'
-global_id_list = ['EBAY-US', 'EBAY-ENCA']
+USER_AGENT_LIST = user_agents_list.split('\n')
+SECURITY_APPNAME = settings.SECURITY_APPNAME
+URL = settings.API_CALL_URL
+global_id_list = settings.global_id_list
 keywords = 'coffee ground'
 
 # Api-call url example:
 # http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.1.0&SECURITY-APPNAME=EugeneSh-bestCoff-PRD-35d7504c4-714318e1&GLOBAL-ID=EBAY-ENCA&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&keywords=coffee%20ground&paginationInput.entriesPerPage=1&paginationInput.pageNumber=1
 #
+
+class OverridedConnectionClass(Connection):
+    """
+    This class override ebaysdk.http.Connection class for using random user_agents in api calls 
+    """
+    def build_request(self, url, data, headers):
+        self._request_id = uuid.uuid4()
+        
+        global USER_AGENT_LIST
+        USER_AGENT = USER_AGENT_LIST[randrange(0,len(USER_AGENT_LIST))]
+        print("user agent in OverridedConnectionClass ", USER_AGENT)
+
+        headers.update({'User-Agent': USER_AGENT,
+                        'X-EBAY-SDK-REQUEST-ID': str(self._request_id)})
+
+        kw = dict()
+        if self.method == 'POST':
+            kw['data'] = data
+        else:
+            kw['params'] = data
+
+        request = Request(self.method,
+                          url,
+                          headers=headers,
+                          **kw
+                          )
+
+        self.request = request.prepare()
 
 
 class Espider:
@@ -45,19 +78,24 @@ class Espider:
                                     self.keywords + \
                                     self.items_per_page + \
                                     '&paginationInput.pageNumber='
-                                    
-    #According to ebay api docs ebay return maximum 100 pages (paginationInput.pageNumber)
-    #and maximum 100 items per page
+        self.output_json_filename = 'espider_' + dt.now().strftime('%d-%m-%y_%H%M%S') + '_output.json' 
     
-    def GetDataFromContent(self, responseContent):
+    #                                
+    # According to ebay api docs ebay return maximum 100 pages (paginationInput.pageNumber)
+    # and maximum 100 items per page
+    #
+    
+    def getDataFromContent(self, responseContent):
         """
         This func takes api response, parse it and return data in json format   
         """
         items_amount_in_reponse = int(responseContent['findItemsByKeywordsResponse'][0]['searchResult'][0]['@count'])
         
         for i in range(items_amount_in_reponse):
+            
             #TODO 
             #Make time in tz UTC+2 
+            
             time = dt.now().strftime('%d.%m.%y %H:%M:%S')
             title = responseContent['findItemsByKeywordsResponse'][0]['searchResult'][0]['item'][i]['title'][0]
             price = responseContent['findItemsByKeywordsResponse'][0]['searchResult'][0]['item'][i]['sellingStatus'][0]['currentPrice'][0]['__value__']
@@ -65,7 +103,7 @@ class Espider:
             product_url = responseContent['findItemsByKeywordsResponse'][0]['searchResult'][0]['item'][i]['viewItemURL'][0].replace('\\','')
             
             try:
-                product_rating = self.GetProductRating(product_url)
+                product_rating = self.getProductRating(product_url)
                 stars_amount = product_rating[0]
                 reviews_amount = product_rating[1]
             except:
@@ -102,15 +140,20 @@ class Espider:
                 "location": location,
             }
             
-            with open('out.txt', 'a') as f:
+            with open(self.output_json_filename, 'a') as f:
                 f.write(json.dumps(complete_result) + '\n')
                     
             print(json.dumps(complete_result))
     
-    def GetProductRating(self, product_url):
+    def getProductRating(self, product_url):
+        
+        global USER_AGENT_LIST
+        USER_AGENT = USER_AGENT_LIST[randrange(0,len(USER_AGENT_LIST))]
+        print("user agent in getProductRating  ", USER_AGENT)
+        
         try:
             headers = {'user-agent' : USER_AGENT}
-            res = requests.get(product_url, headers=headers)
+            res = requests.get(product_url, headers=headers, timeout=30)
         except:
             #print("Error during request/response parse. Url: %s" % product_url)
             return "Error during request. Url: %s" % product_url
@@ -126,26 +169,26 @@ class Espider:
             print("Error during request/response parse. Url: %s" % product_url)
         """
     
-    def RunSpider(self):
+    def runSpider(self):
         print("ebaySpider started...\npages_amount: %s\nitems_per_page: %s" % (self.pages_amount, self.items_per_page))
         print("GLOBAL-ID set to %s" % global_id)
+        
         try:
-            #api = Finding(appid=SECURITY_APPNAME, config_file=None)
-            api = HTTP(config_file=None)
-            headers_for_sdk = {'User-Agent': USER_AGENT}
+            api = OverridedConnectionClass(config_file=None)
             
             #Make api call
             for pageNumber in range(1, self.pages_amount + 1):
                 print("================== Page %s ==================" % pageNumber)
-                responseObj = api.execute(self.complete_api_call_url + str(pageNumber), headers=headers_for_sdk)
+                responseObj = api.execute(self.complete_api_call_url + str(pageNumber))
 
                 if responseObj.status_code != 200:
                     return False
 
                 #Get content part of response obj and convert it to str;
                 #Method ast.literal_eval() transform str > dict object.
+                
                 responseContent = ast.literal_eval(str(responseObj.content, 'utf-8'))
-                self.GetDataFromContent(responseContent)
+                self.getDataFromContent(responseContent)
 
         except ConnectionError as e:
             print(e)
@@ -154,6 +197,6 @@ if __name__ == '__main__':
     try:
         for global_id in global_id_list:
             espider = Espider(security_appname=SECURITY_APPNAME, global_id=global_id, url=URL, keywords=keywords, pages_amount=1, items_per_page=3)
-            espider.RunSpider()
+            espider.runSpider()
     except KeyboardInterrupt:
         print("Spider stoping...")
