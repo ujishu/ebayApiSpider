@@ -5,6 +5,7 @@ import json
 import ebaysdk
 import settings
 import uuid
+from proxyBroker import get_proxy
 from ebaysdk.http import Connection
 from ebaysdk.exception import ConnectionError
 from lxml import html
@@ -19,7 +20,6 @@ from requests import Request
 #
 
 #TODO
-# change ip 
 # make output in postgres db
 # Logging 
 # courutin format ?
@@ -151,9 +151,12 @@ class Espider:
         USER_AGENT = USER_AGENT_LIST[randrange(0,len(USER_AGENT_LIST))]
         print("user agent in getProductRating  ", USER_AGENT)
         
+        get_proxy = get_proxy()
+        proxies = dict({get_proxy[0]: get_proxy[0] + '://' + get_proxy[1] + ':' + str(get_proxy[2])})
+        
         try:
             headers = {'user-agent' : USER_AGENT}
-            res = requests.get(product_url, headers=headers, timeout=30)
+            res = requests.get(product_url, headers=headers, proxies=proxies, timeout=30)
         except:
             #print("Error during request/response parse. Url: %s" % product_url)
             return "Error during request. Url: %s" % product_url
@@ -173,8 +176,10 @@ class Espider:
         print("ebaySpider started...\npages_amount: %s\nitems_per_page: %s" % (self.pages_amount, self.items_per_page))
         print("GLOBAL-ID set to %s" % global_id)
         
+        proxy = get_proxy()
+        
         try:
-            api = OverridedConnectionClass(config_file=None)
+            api = OverridedConnectionClass(config_file=None, proxy_host=proxy[1], proxy_port=proxy[2])
             
             #Make api call
             for pageNumber in range(1, self.pages_amount + 1):
