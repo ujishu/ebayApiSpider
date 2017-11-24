@@ -20,8 +20,7 @@ from requests import Request
 #
 
 #TODO
-# replayce ebaysdk with requests ?
-# create separate file for spider instances
+# replayce ebaysdk with requests module?
 # make output in postgres db
 # Logging 
 # courutin format ?
@@ -30,10 +29,9 @@ USER_AGENT_LIST = user_agents_list.split('\n')
 SECURITY_APPNAME = settings.SECURITY_APPNAME
 URL = settings.API_CALL_URL
 global_id_list = settings.global_id_list
-keywords = 'coffee ground'
 
 # Api-call url example:
-# http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.1.0&SECURITY-APPNAME=EugeneSh-bestCoff-PRD-35d7504c4-714318e1&GLOBAL-ID=EBAY-ENCA&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&keywords=coffee%20ground&paginationInput.entriesPerPage=1&paginationInput.pageNumber=1
+# http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.1.0&SECURITY-APPNAME=EugeneSh-bestCoff-PRD-35d7504c4-714318e1&GLOBAL-ID=EBAY-US&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&keywords=coffee%20ground&paginationInput.entriesPerPage=1&paginationInput.pageNumber=1
 #
 
 class OverridedConnectionClass(Connection):
@@ -66,13 +64,12 @@ class OverridedConnectionClass(Connection):
 
 
 class Espider:
-    def __init__(self, security_appname, global_id, url, keywords, items_per_page):
+    def __init__(self, security_appname, global_id, url, keywords):
         self.security_appname = '&SECURITY-APPNAME=' + security_appname
         self.global_id = '&GLOBAL-ID=' + global_id
         self.url = url
-        self.pages_amount = 100
         self.keywords = '&keywords=' + quote(keywords)
-        self.items_per_page = '&paginationInput.entriesPerPage=' + str(items_per_page)
+        self.items_per_page = '&paginationInput.entriesPerPage=' + str(settings.items_per_page)
         self.complete_api_call_url = self.url + \
                                     self.security_appname + \
                                     self.global_id + \
@@ -172,15 +169,29 @@ class Espider:
         reviews_amount = "".join([i for i in reviews_amount_raw if i.isdigit()])
         return stars_amount, reviews_amount
         
+    
+    def pages_amount_detect(self):
+        
         """
+        Func that request pages_amount
+        """
+        
+        try:
+            res_obj = requests.get(self.complete_api_call_url + '1').content
+            responseContent = ast.literal_eval(str(res_obj, 'utf-8'))
+            pages_amount = responseContent['findItemsByKeywordsResponse'][0]['paginationOutput'][0]['totalPages'][0]
+            return pages_amount
         except:
-            print("Error during request/response parse. Url: %s" % product_url)
-        """
+            print("\nError in pages_amount_detect func\n pages_amount will be set to 1")
+            pages_amount = "1"
+            return pages_amount
     
     def runSpider(self):
         
+        self.pages_amount = self.pages_amount_detect()
+        
         print("ebaySpider started...\npages_amount: %s\nitems_per_page: %s" % (self.pages_amount, self.items_per_page))
-        print("GLOBAL-ID set to %s" % global_id)
+        print("GLOBAL-ID set to %s" % self.global_id)
         
         proxy = get_proxy()
         
@@ -188,8 +199,9 @@ class Espider:
             api = OverridedConnectionClass(config_file=None, proxy_host=proxy[1], proxy_port=proxy[2])
             
             #Make api call
-            for pageNumber in range(1, self.pages_amount + 1):
+            for pageNumber in range(1, int(self.pages_amount) + 1):
                 print("================== Page %s ==================" % pageNumber)
+                print("URL: %s" % self.complete_api_call_url + str(pageNumber))
                 responseObj = api.execute(self.complete_api_call_url + str(pageNumber))
 
                 if responseObj.status_code != 200:
@@ -203,11 +215,3 @@ class Espider:
 
         except ConnectionError as e:
             print(e)
-
-if __name__ == '__main__':
-    try:
-        for global_id in global_id_list:
-            espider = Espider(security_appname=SECURITY_APPNAME, global_id=global_id, url=URL, keywords=keywords, items_per_page=100)
-            espider.runSpider()
-    except KeyboardInterrupt:
-        print("Spider stoping...")
