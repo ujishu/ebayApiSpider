@@ -10,6 +10,6 @@ try:
                             global_id=global_id, 
                             url=settings.API_CALL_URL, 
                             keywords=keywords)
-        espider.runSpider()
+        espider.run_spider()
 except KeyboardInterrupt:
     print("Spider stoping...")

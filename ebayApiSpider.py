@@ -84,7 +84,7 @@ class Espider:
     # and maximum 100 items per page
     #
     
-    def getDataFromContent(self, responseContent):
+    def get_data_from_content(self, responseContent):
         """
         This func takes api response, parse it and return data in json format   
         """
@@ -102,7 +102,7 @@ class Espider:
             product_url = responseContent['findItemsByKeywordsResponse'][0]['searchResult'][0]['item'][i]['viewItemURL'][0].replace('\\','')
             
             try:
-                product_rating = self.getProductRating(product_url)
+                product_rating = self.get_product_rating(product_url)
                 stars_amount = product_rating[0]
                 reviews_amount = product_rating[1]
             except:
@@ -147,11 +147,11 @@ class Espider:
                     
             print(json.dumps(complete_result))
     
-    def getProductRating(self, product_url):
+    def get_product_rating(self, product_url):
         
         global USER_AGENT_LIST
         USER_AGENT = USER_AGENT_LIST[randrange(0,len(USER_AGENT_LIST))]
-        print("user agent in getProductRating  ", USER_AGENT)
+        print("user agent in get_product_rating  ", USER_AGENT)
         
         get_proxy = get_proxy()
         proxies = dict({get_proxy[0]: get_proxy[0] + '://' + get_proxy[1] + ':' + str(get_proxy[2])})
@@ -186,7 +186,7 @@ class Espider:
             pages_amount = "1"
             return pages_amount
     
-    def runSpider(self):
+    def run_spider(self):
         
         self.pages_amount = self.pages_amount_detect()
         
@@ -211,7 +211,7 @@ class Espider:
                 #Method ast.literal_eval() transform str > dict object.
                 
                 responseContent = ast.literal_eval(str(responseObj.content, 'utf-8'))
-                self.getDataFromContent(responseContent)
+                self.get_data_from_content(responseContent)
 
         except ConnectionError as e:
             print(e)
